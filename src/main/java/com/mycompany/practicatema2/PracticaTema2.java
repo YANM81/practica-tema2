@@ -14,7 +14,9 @@ public class PracticaTema2 {
 
     public static void main(String[] args) {
       
-      System.out.println("--- RETO 1 ---");
+      System.out.println("Alumno: Yezid Alejandro Niño Melo");
+        
+      System.out.println("\n--- RETO 1 ---");
       System.out.println("Array: 7 3 9 1 5");
       CuentaYSuma();
       System.out.println("\n--- RETO 2 ---");
@@ -65,13 +67,14 @@ public class PracticaTema2 {
         int vocales = 0;
         
         for(int i = 0; i < palabra.length; i++){
+            System.out.print(palabra[i]);
             char letra = palabra[i];
             
             if(letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
                 vocales++;
             }   
         }
-        System.out.println("Vocales: " + vocales);
+        System.out.println("\nVocales: " + vocales);
     }
     
     public static void elRetoDeCadenas(){
