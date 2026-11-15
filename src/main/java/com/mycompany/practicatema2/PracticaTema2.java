@@ -129,27 +129,29 @@ public class PracticaTema2 {
             {2, 4, 6},
             {1, 3, 5},
             {7, 8, 9}
-    };
+        };
     
     int sumaTotal = 0;
     int mayor = matriz[0][0];
     
         System.out.println("Matriz:");
+        for(int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz.length; j++){
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
         
         for(int i = 0; i < matriz.length; i++){
             int sumaFila = 0;
             for(int j = 0; j < matriz.length; j++){
-                System.out.print(matriz[i][j] + " ");
-                
                 sumaFila += matriz[i][j];
                 sumaTotal += matriz[i][j];
                 
                 if(matriz[i][j] > mayor){
                     mayor = matriz[i][j];
                 }
-            }
-            
-            System.out.println();
+            } 
             System.out.println("Suma fila " + i + ": " + sumaFila);
         }
         
