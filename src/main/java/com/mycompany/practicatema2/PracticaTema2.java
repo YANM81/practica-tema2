@@ -14,17 +14,18 @@ public class PracticaTema2 {
 
     public static void main(String[] args) {
       
-      System.out.println("--- RETO 1 ---");  
+      System.out.println("--- RETO 1 ---");
+      System.out.println("Array: 7 3 9 1 5");
       CuentaYSuma();
-      System.out.println("--- RETO 2 ---");
+      System.out.println("\n--- RETO 2 ---");
       laPalabra();
-      System.out.println("--- RETO 3 ---");
+      System.out.println("\n--- RETO 3 ---");
       cuentaVocales();
-      System.out.println("--- RETO 4 ---");        
+      System.out.println("\n--- RETO 4 ---");        
       elRetoDeCadenas();       
-      System.out.println("--- RETO 5 ---");        
+      System.out.println("\n--- RETO 5 ---");        
       coordenadas();
-      System.out.println("--- RETO 6 ---");        
+      System.out.println("\n--- RETO 6 ---");        
       laMatrizCompleta();
       
       
@@ -34,6 +35,7 @@ public class PracticaTema2 {
     
     public static void CuentaYSuma(){
         int[]lista = {7, 3, 9, 1, 5};
+        
         int suma = 0;
                         
         for(int i = 0; i < lista.length; i++){
@@ -50,11 +52,11 @@ public class PracticaTema2 {
     public static void laPalabra(){
         char[] palabra = {'H','O', 'L', 'A'};
         
-        for(int i = 0; i > palabra.length; i++){
+        for(int i = 0; i < palabra.length; i++){
             System.out.println(palabra[i]);
         }
         
-        System.out.println("Longitud" + palabra.length);
+        System.out.println("Longitud: " + palabra.length);
         
     }
     
